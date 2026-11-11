@@ -1,0 +1,15 @@
+{
+    "project": "game1",
+    "dbConfig": {
+        "host": "127.0.0.1",
+        "port": 10001
+    },
+    "game": {
+        "m1": {
+            "rank_level": 10
+        },
+        "m2": {
+            "rank_level": 11
+        }
+    }
+}

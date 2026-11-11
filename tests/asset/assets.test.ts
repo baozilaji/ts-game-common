@@ -1,0 +1,35 @@
+import { describe, it, expect } from "vitest";
+import { BinaryAssets } from '../../src/asset/assets';
+
+describe('binary asset', ()=>{
+    it('download binary asset', async ()=>{
+        const dis = await BinaryAssets.loadFromUrl("https://hlxxxm4-cdn.galsanggame.com/test/test.bin");
+        expect(dis.readInt8()).toBe(126)
+        expect(dis.readInt8()).toBe(127)
+        expect(dis.readInt8()).toBe(-128)
+        expect(dis.readUint8()).toBe(254)
+        expect(dis.readUint8()).toBe(255)
+        expect(dis.readUint8()).toBe(0)
+        expect(dis.readInt16()).toBe(32766)
+        expect(dis.readInt16()).toBe(32767)
+        expect(dis.readInt16()).toBe(-32768)
+        expect(dis.readUint16()).toBe(65534)
+        expect(dis.readUint16()).toBe(65535)
+        expect(dis.readUint16()).toBe(0)
+        expect(dis.readInt32()).toBe(2147483646)
+        expect(dis.readInt32()).toBe(2147483647)
+        expect(dis.readInt32()).toBe(-2147483648)
+        expect(dis.readUint32()).toBe(4294967294)
+        expect(dis.readUint32()).toBe(4294967295)
+        expect(dis.readUint32()).toBe(0)
+        expect(dis.readInt64()).toBe(9223372036854775806n)
+        expect(dis.readInt64()).toBe(9223372036854775807n)
+        expect(dis.readInt64()).toBe(-9223372036854775808n)
+        expect(dis.readUint64()).toBe(18446744073709551614n)
+        expect(dis.readUint64()).toBe(18446744073709551615n)
+        expect(dis.readUint64()).toBe(0n)
+        expect(dis.readFloat32()).toBe(1.1119999885559082)
+        expect(dis.readFloat64()).toBe(1.0020202)
+        expect(dis.readUTF8()).toBe("你好,Hello,😆")
+    })
+})
