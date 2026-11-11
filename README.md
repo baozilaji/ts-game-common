@@ -1,3 +1,3 @@
-# ts-gs-common
+# ts-game-common
 
-Typescript Game Server Common Utils
+Typescript Game Common Utils
