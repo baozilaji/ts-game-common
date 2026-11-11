@@ -1,7 +1,7 @@
 {
-  "name": "ts-gs-common",
-  "version": "1.0.0",
-  "description": "common utils for game server",
+  "name": "ts-game-common",
+  "version": "1.0.1",
+  "description": "common utils for game",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -23,11 +23,11 @@
   },
   "keywords": [
     "typescript",
-    "game server",
+    "game",
     "common utils"
   ],
   "files": [
-    "dist/**/*"
+    "dist"
   ],
   "author": "baozilaji@126.com",
   "license": "ISC",
