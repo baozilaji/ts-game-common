@@ -1,4 +1,3 @@
-import { BinaryAssets } from './asset/assets';
 export { stringToDate, dateToString } from './utils/date';
 
 export type {
@@ -15,4 +14,4 @@ export { mergeSerializableValue, deepCopy, isSerializableObject } from './utils/
 
 export { DataInputStream, DataOutputStream } from './utils/stream';
 
-export { BinaryAssets };
+export { BinaryAssets } from './asset/assets';
